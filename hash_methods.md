@@ -1,3 +1,30 @@
+Hashes
+Basic Definition
+A hash is an unordered collection of information where each stored value is accessed through a label(referred to as a 'key').
+
+
+Basic Components
+A hash has zero or more pairs of a 'key' and a 'value' contained within the open '{' and closed '}' brackets. We can express this relationship in two ways: 
+
+* We want to put our inventory (3 'apples', 2 'bananas', and 1 'orange') into a hash named 'inventory':* 
+
+1. The Rocket
+
+inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
+
+2. Symbols
+*add link to symbols page*
+inventory = {apples: 3, bananas: 2, oranges: 1}
+
+Here, 'apples', 'bananas', and 'oranges' are each a *key*, with their respective *values* '3', '2', and '1'.
+
+How to access a value for a key
+*Using the above inventory example*
+
+For a specific *key*, we 
+
+How To Create a Hash
+
 ::[]
 ::new
 ::try_convert
