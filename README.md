@@ -11,12 +11,12 @@ Format:  When defining something, try to use human langauge, and give easy concr
 
 Here is the model you should use when defining a term:
 
-Class: String
-Method: Center
-Defintion: the center method centers the letters/numbers (characters/variables) inside the quotation marks.
-Example: 
-#=> "hello".center(20)        
-#=> "       hello        "
+Class: String<br/>
+Method: Center<br/>
+Defintion: the center method centers the letters/numbers (characters/variables) inside the quotation marks.<br/>
+Example:<br/>
+-> "hello".center(20)        
+-> "       hello        "
 Used: Rarely
 
 
