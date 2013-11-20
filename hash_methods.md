@@ -4,9 +4,9 @@ A hash is an unordered collection of information where each stored value is acce
 
 
 Basic Components
-A hash has zero or more pairs of a 'key' and a 'value' contained within the open '{' and closed '}' brackets. We can express this relationship in two ways: 
+A hash has zero or more pairs of a 'key' and a 'value' contained within the open '{' and closed '}' brackets. We can express this key/value relationship in two ways: 
 
-* We want to put our inventory (3 'apples', 2 'bananas', and 1 'orange') into a hash named 'inventory':* 
+* We want to put our inventory (we have 3 'apples', 2 'bananas', and 1 'orange') into a hash named 'inventory':* 
 
 1. The Rocket
 
@@ -19,9 +19,30 @@ inventory = {apples: 3, bananas: 2, oranges: 1}
 Here, 'apples', 'bananas', and 'oranges' are each a *key*, with their respective *values* '3', '2', and '1'.
 
 How to access a value for a key
+
+For a specific *key*, we will use the following format:
+
+> hash[*key*]
+
+to return the assigned *value*. If no value exists, it will return *nil*.
+
 *Using the above inventory example*
 
-For a specific *key*, we 
+1. inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
+
+> > inventory['apples'] 
+> > *=> 3*
+> > inventory['bananas'] 
+> > *=> 2*
+
+2. inventory = {apples: 3, bananas: 2, oranges: 1}
+
+> > inventory[:apples] 
+> > *=> 3*
+> > inventory[:bananas] 
+> > *=> 2*
+
+Regardless of what type of object our keys are, we can access the assigned value using the same *hash_name*[] notation.
 
 How To Create a Hash
 
