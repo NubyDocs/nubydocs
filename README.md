@@ -15,8 +15,8 @@ Class: String<br/>
 Method: Center<br/>
 Defintion: the center method centers the letters/numbers (characters/variables) inside the quotation marks.<br/>
 Example:<br/>
--> "hello".center(20)        
--> "       hello        "
+=><h4/> "hello".center(20)</h4>        
+=> "       hello        "<br/>
 Used: Rarely
 
 
