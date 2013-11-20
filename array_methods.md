@@ -1,6 +1,12 @@
 ::[]
 ::new
 ::try_convert
+# %w **Quick hand way of writing an array**
+ %w allows you to create an array without commas and quotation marks.
+
+Ex: a = ["1", "2", "3", "4"] is equivalent to a = %w[ 1 2 3 4]
+
+Usage => All the time!
 #&
 #*
 #+
@@ -40,6 +46,10 @@
 Ex: %w[1 2 3 4].fetch(1) returns 2 (2 is the at index 1 in this array)
 
 Ex: %w[1 2 3 4].fetch(-1) returns 4 (4 is the last element in this array)
+
+Usage => Medium
+
+Use: Given an array of words, use fetch to only return a certain word based on its index. 
 #fill
 #find_index
 #first
@@ -83,7 +93,9 @@ Ex: %w[1 2 3 4].fetch(-1) returns 4 (4 is the last element in this array)
 #shuffle!
 #size
 #slice
-#slice!
+#slice! **Slice is used to removed elements from an array given their index, and the removed object is also returned**
+Ex: %w[A B C D E F G].slice!(1) returns "b" and the array is now %w[A C D E F G]
+
 #sort
 #sort!
 #sort_by!
