@@ -6,7 +6,10 @@
 #+
 #-
 #<<
-#<=>
+#<=> Spaceship Operator: a <=> b 
+  if a < b then return -1
+  if a = b then return  0
+  if a > b then return  1
 #==
 #[]
 #[]=
@@ -31,7 +34,9 @@
 #each_index
 #empty?
 #eql?
-#fetch
+#fetch :Fetch returns a designated element from a given index 
+Ex: %w[1 2 3 4].fetch(1) returns 2 (2 is the at index 1 in this array)
+Ex: %w[1 2 3 4].fetch(-1) returns 4 (4 is the last element in this array)
 #fill
 #find_index
 #first
