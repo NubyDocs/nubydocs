@@ -93,8 +93,10 @@ Use: Given an array of words, use fetch to only return a certain word based on i
 #shuffle!
 #size
 #slice
-#slice! **Slice is used to removed elements from an array given their index, and the removed object is also returned**
-Ex: %w[A B C D E F G].slice!(1) returns "b" and the array is now %w[A C D E F G]
+#slice! **Slice is used to remove elements from an array given their index, and the removed object is also returned**
+Ex: %w[A B C D E F G].slice!(1) returns "b" 
+
+ the array is now %w[A C D E F G]
 
 Used => Often
 #sort
