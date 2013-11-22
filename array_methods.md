@@ -43,7 +43,7 @@ Used => All the time!
 #empty?
 #eql?
 #fetch **:Fetch returns a designated element from a given index** 
-Ex: %w[1 2 3 4].fetch(1) returns 2 (2 is the at index 1 in this array)
+Ex: %w[1 2 3 4].fetch(1) returns 2 (2 is at index 1 in this array)
 
 Ex: %w[1 2 3 4].fetch(-1) returns 4 (4 is the last element in this array)
 
@@ -70,7 +70,13 @@ Use: Given an array of words, use fetch to only return a certain word based on i
 #map!
 #pack
 #permutation
-#pop
+#pop **Remove the last element from an array**
+Ex: a = %w[this is using pop]
+
+    a.pop returns [this is using]
+    
+    a.pop(2) returns [this]
+    
 #product
 #push
 #rassoc
@@ -93,8 +99,10 @@ Use: Given an array of words, use fetch to only return a certain word based on i
 #shuffle!
 #size
 #slice
-#slice! **Slice is used to removed elements from an array given their index, and the removed object is also returned**
-Ex: %w[A B C D E F G].slice!(1) returns "b" and the array is now %w[A C D E F G]
+#slice! **Slice is used to remove elements from an array given their index, and the removed object is also returned**
+Ex: %w[A B C D E F G].slice!(1) returns "b" 
+
+ the array is now %w[A C D E F G]
 
 Used => Often
 #sort
