@@ -20,7 +20,7 @@ inventory = {apples: 3, bananas: 2, oranges: 1}
 
 Here, 'apples', 'bananas', and 'oranges' are each a *key*, with their respective *values* '3', '2', and '1'.
 
-How to access a value for a key
+**How to access a value for a key** 
 
 For a specific *key*, we will use the following format:
 
@@ -30,19 +30,15 @@ to return the assigned *value*. If no value exists, it will return *nil*.
 
 *Using the above inventory example*
 
-1. inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
+* inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 
-> > inventory['apples'] 
-> > *=> 3*
-> > inventory['bananas'] 
-> > *=> 2*
+> > inventory['apples'] *= 3*
+> > inventory['bananas'] *= 2*
 
-2. inventory = {apples: 3, bananas: 2, oranges: 1}
+* inventory = {apples: 3, bananas: 2, oranges: 1}
 
-> > inventory[:apples] 
-> > *=> 3*
-> > inventory[:bananas] 
-> > *=> 2*
+> > inventory[:apples] *= 3*
+> > inventory[:bananas] *= 3*
 
 Regardless of what type of object our keys are, we can access the assigned value using the same *hash_name*[] notation.
 
