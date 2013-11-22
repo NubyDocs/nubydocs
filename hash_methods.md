@@ -1,9 +1,11 @@
 Hashes
-Basic Definition
+======
+
+**Basic Definition**
 A hash is an unordered collection of information where each stored value is accessed through a label(referred to as a 'key').
 
 
-Basic Components
+**Basic Components**
 A hash has zero or more pairs of a 'key' and a 'value' contained within the open '{' and closed '}' brackets. We can express this key/value relationship in two ways: 
 
 * We want to put our inventory (we have 3 'apples', 2 'bananas', and 1 'orange') into a hash named 'inventory':* 
