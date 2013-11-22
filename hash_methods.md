@@ -33,11 +33,13 @@ to return the assigned *value*. If no value exists, it will return *nil*.
 * inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 
 > > inventory['apples'] *= 3*
+
 > > inventory['bananas'] *= 2*
 
 * inventory = {apples: 3, bananas: 2, oranges: 1}
 
 > > inventory[:apples] *= 3*
+
 > > inventory[:bananas] *= 3*
 
 Regardless of what type of object our keys are, we can access the assigned value using the same *hash_name*[] notation.
