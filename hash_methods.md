@@ -67,6 +67,9 @@ How To Create a Hash
 #each_pair
 #each_value
 #empty?
+* Returns true if there are no key/value pairs in the hash.
+> > {}.empty? is *true*
+> > {a => 2}.empty? is *false*
 #eql?
 #fetch
 #flatten
@@ -82,6 +85,7 @@ How To Create a Hash
 #key?
 #keys
 #length
+* Returns an integer for the number of key/value pairs in the hash. An empty hash has length 0.
 #member?
 #merge
 #merge!
