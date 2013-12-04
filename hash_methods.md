@@ -67,9 +67,11 @@ How To Create a Hash
 #each_pair
 #each_value
 #empty?
+
 * Returns true if there are no key/value pairs in the hash.
 > > {}.empty? is *true*
 > > {a => 2}.empty? is *false*
+
 #eql?
 #fetch
 #flatten
@@ -77,27 +79,33 @@ How To Create a Hash
 #has_value?
 #hash
 #include?(*param*)
+
 * Returns true if the hash has a *key* equal to the inputted param. Otherwise returns false.
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 > > inventory.include?('apples') is *true*
 > > inventory.include?('grapes') is *false*
 > > inventory.include?(3) is *false*
+
 #initialize_copy
 #inspect
 #invert
 #keep_if
 #key
 #key?(*param*)
+
 * Returns true if the hash has a key with the value of the inputted *param*.
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 > > inventory.key?('apples') is *true*
 > > inventory.key?('grapes') is *false*
+
 #keys
 * Returns an array of the keys in the hash
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 > > inventory.values *returns* ['apples', 'bananas', 'oranges']
+
 #length
 * Returns an integer for the number of key/value pairs in the hash. An empty hash has length 0.
+
 #member?
 #merge
 #merge!
@@ -116,6 +124,7 @@ How To Create a Hash
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 > > inventory.to_a *returns* [['apples', 3], ['bananas', 2], ['oranges', 1]}
 > > Notice that to_a creates a *new* array object, and that inventory is unchanged (still the original hash).
+
 #to_h
 #to_hash
 #to_s
@@ -126,8 +135,10 @@ How To Create a Hash
 > > inventory.include?(3) is *true*
 > > inventory.include?(1) is *false*
 > > inventory.include?('apples') is *false*
+
 #values
 * Returns an array of the values for each key in the hash
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 > > inventory.values *returns* [3, 2, 1]
+
 #values_at
