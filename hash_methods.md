@@ -46,6 +46,33 @@ Regardless of what type of object our keys are, we can access the assigned value
 
 How To Create a Hash
 
+*Calling the *new* method: Hash.new # => {}
+> Note: Hash.new can take optional arguments which will define specific values within the hash. 
+> > inventory = Hash.new(apples: 3, bananas: 2)
+> > # *inventory = {apples: 2, bananas: 3}*
+*Setting a variable equal to an empty hash: inventory = {}
+
+Editing and Adding a key/value Pair
+
+*We can manually define a key/value pair using the hash[*key*] format, which will alter the original hash.
+
+* This process will either override a value for an existing key, or add a new key/value pair with the information provided.
+
+> inventory = {apples: 2, bananas: 1}
+
+> inventory[:bananas] = 2
+
+> > inventory = {apples: 3, bananas: 2}
+
+*Now we will add the key 'oranges' with a value of 1*
+
+> inventory[:oranges] = 1
+
+*Now looking at our inventory hash:
+
+> > inventory = {apples: 3, bananas: 2, oranges: 1}
+
+
 ::[]
 ::new
 ::try_convert
