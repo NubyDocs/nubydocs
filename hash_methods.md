@@ -32,15 +32,15 @@ to return the assigned *value*. If no value exists, it will return *nil*.
 
 * inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 
-> > inventory['apples'] *= 3*
+> > inventory['apples'] #=> 3*
 
-> > inventory['bananas'] *= 2*
+> > inventory['bananas'] #=> 2*
 
 * inventory = {apples: 3, bananas: 2, oranges: 1}
 
-> > inventory[:apples] *= 3*
+> > inventory[:apples] #=> 3*
 
-> > inventory[:bananas] *= 3*
+> > inventory[:bananas] #=> 3*
 
 Regardless of what type of object our keys are, we can access the assigned value using the same *hash_name*[] notation.
 
@@ -62,7 +62,7 @@ Editing and Adding a key/value Pair
 
 > inventory[:bananas] = 2
 
-> > inventory = {apples: 3, bananas: 2}
+> > inventory #=> {apples: 3, bananas: 2}
 
 *Now we will add the key 'oranges' with a value of 1*
 
@@ -70,7 +70,7 @@ Editing and Adding a key/value Pair
 
 *Now looking at our inventory hash:
 
-> > inventory = {apples: 3, bananas: 2, oranges: 1}
+> > inventory #=> {apples: 3, bananas: 2, oranges: 1}
 
 
 ::[]
@@ -97,9 +97,9 @@ Editing and Adding a key/value Pair
 
 * Returns true if there are no key/value pairs in the hash.
 
-> > {}.empty? is *true*
+> > {}.empty? #=> *true*
 
-> > {a => 2}.empty? is *false*
+> > {a => 2}.empty? #=> *false*
 
 #eql?
 #fetch
@@ -113,15 +113,22 @@ Editing and Adding a key/value Pair
 
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 
-> > inventory.include?('apples') is *true*
+> > inventory.include?('apples') #=> *true*
 
-> > inventory.include?('grapes') is *false*
+> > inventory.include?('grapes') #=> *false*
 
-> > inventory.include?(3) is *false*
+> > inventory.include?(3) #=> *false*
 
 #initialize_copy
 #inspect
 #invert
+
+* Returns a new hash by applying the original hash's values as keys, and keys as values. 
+
+> inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
+
+> > inventory.invert #=> {3 => "apples", 2 => "bananas", 1 => "oranges"}
+
 #keep_if
 #key
 #key?(*param*)
@@ -130,11 +137,12 @@ Editing and Adding a key/value Pair
 
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 
-> > inventory.key?('apples') is *true*
+> > inventory.key?('apples') #=> *true*
 
-> > inventory.key?('grapes') is *false*
+> > inventory.key?('grapes') #=> *false*
 
 #keys
+
 * Returns an array of the keys in the hash
 
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
@@ -142,9 +150,19 @@ Editing and Adding a key/value Pair
 > > inventory.values *returns* ['apples', 'bananas', 'oranges']
 
 #length
+
 * Returns an integer for the number of key/value pairs in the hash. An empty hash has length 0.
 
-#member?
+#member?(*key*)
+
+* Returns *true* if the specified key is in the hash. Otherwise, returns *false*.
+
+> inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
+
+> > inventory.member?('apples') #=> *true*
+
+> > inventory.member?('kiwi') #=> *false*
+
 #merge
 #merge!
 #rassoc
@@ -156,6 +174,10 @@ Editing and Adding a key/value Pair
 #select!
 #shift
 #size
+* Returns an integer for the number of key/value pairs in the hash
+> inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
+
+> > inventory.size #=> 3
 #store
 #to_a
 
@@ -176,17 +198,24 @@ Editing and Adding a key/value Pair
 
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 
-> > inventory.include?(3) is *true*
+> > inventory.include?(3) #=> *true*
 
-> > inventory.include?(1) is *false*
+> > inventory.include?(1) #=> *false*
 
-> > inventory.include?('apples') is *false*
+> > inventory.include?('apples') #=> *false*
 
 #values
 * Returns an array of the values for each key in the hash
 
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 
-> > inventory.values *returns* [3, 2, 1]
+> > inventory.values #=> [3, 2, 1]
 
-#values_at
+#values_at(*key*)
+* Returns an array of the values for specified keys, and can take multiple keys as arguments.
+
+> inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
+
+> > inventory.values_at('apples') #=> [3]
+
+> > inventory.values_at('apples', 'bananas') #=> [3,2]

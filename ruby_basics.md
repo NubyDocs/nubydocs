@@ -17,7 +17,7 @@ $ ruby my_program.rb
 
 IRB is used mostly to experiment and see what what you are producing so that you can better find out what is happening in your code. in IRB you can spit out code and have it show you the steps of what it's producing not just spit out the final answer or error. 
 
-2. Varibles
+2. Variables
 A variable is just a name for a piece of data.  They are flexible and can be changed at any time.  Variables are assigned using the equal sign.  a = 5, is an example of a variable.  Variables can store words("strings") and numbers like b = "hello" or c =12.  Variables must be lowercase and if they are a string, cannot be have a number at the front of the string
 
 3. Objects, Attributes and Methods
