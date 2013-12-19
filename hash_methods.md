@@ -75,8 +75,28 @@ Editing and Adding a key/value Pair
 
 ::[]
 ::new
-::try_convert
+::try_convert(*param*)
+
+* Tries to convert the specified *param* to a hash. If successful, it will return a converted hash and returns nil otherwise.
+
+> Hash.try_convert([1, 2, 3]) #=> nil
+
+> Hash.try_convert({1 => 2, 3 => 4}) #=> {1 => 2, 3 => 4}
+
 #==
+
+* Compares equality as a boolean. For two hashes to be equal, each key/value pair must be equal (according to their class's object equality) as well as the same number of keys. 
+
+> {1 => 2, 3 => 4} == {3 => 4, 1 => 2} #=> true
+
+> {1 => 2, 3 => 4} == {1 => 3, 3 => 4} #=> false
+
+> {1 => 2, 3 => 4} == {2 => 2, 3 => 4} #=> false
+
+#!=
+
+* Compares inequality as a boolean. 
+
 #[]
 #[]=
 #assoc
@@ -174,10 +194,13 @@ Editing and Adding a key/value Pair
 #select!
 #shift
 #size
+
 * Returns an integer for the number of key/value pairs in the hash
+
 > inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 
 > > inventory.size #=> 3
+
 #store
 #to_a
 
