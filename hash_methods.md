@@ -97,8 +97,26 @@ Editing and Adding a key/value Pair
 
 * Compares inequality as a boolean. 
 
-#[]
-#[]=
+#[*key*]
+
+* Find the value in the hash for the specified key. If no value exists, it will return *nil*.
+
+> inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
+
+> > inventory['apples'] #=> 3
+
+> > inventory['grapes'] #=> *nil*
+
+#[*key*]=(*param*)
+
+* Sets the value of the specified key as *param*. If the hash does not have the *key*, a new key/value pair is added with the values of *key*/*param*
+
+> inventory = {'apples' => 3 }
+
+> > inventory['apples'] = 10 #=> inventory = {'apples' => 10}
+
+> > inventory['grapes'] = 4 #=> inventory = {'apples' => 3, 'grapes' => 4}
+
 #assoc
 #clear
 #compare_by_identity
