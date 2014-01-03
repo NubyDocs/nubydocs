@@ -2,10 +2,12 @@ Hashes
 ======
 
 **Basic Definition**
+
 A hash is an unordered collection of information where each stored value is accessed through a label(referred to as a 'key').
 
 
 **Basic Components**
+
 A hash has zero or more pairs of a 'key' and a 'value' contained within the open '{' and closed '}' brackets. We can express this key/value relationship in two ways: 
 
 * We want to put our inventory (we have 3 'apples', 2 'bananas', and 1 'orange') into a hash named 'inventory':* 
@@ -15,7 +17,9 @@ A hash has zero or more pairs of a 'key' and a 'value' contained within the open
 inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
 
 2. Symbols
+
 *add link to symbols page*
+
 inventory = {apples: 3, bananas: 2, oranges: 1}
 
 Here, 'apples', 'bananas', and 'oranges' are each a *key*, with their respective *values* '3', '2', and '1'.
@@ -47,9 +51,11 @@ Regardless of what type of object our keys are, we can access the assigned value
 How To Create a Hash
 
 *Calling the *new* method: Hash.new # => {}
+
 > Note: Hash.new can take optional arguments which will define specific values within the hash. 
-> > inventory = Hash.new(apples: 3, bananas: 2)
-> > # *inventory = {apples: 2, bananas: 3}*
+
+> > inventory = Hash.new(apples: 3, bananas: 2) #=> inventory = {apples: 2, bananas: 3}
+
 *Setting a variable equal to an empty hash: inventory = {}
 
 Editing and Adding a key/value Pair
@@ -119,6 +125,13 @@ Editing and Adding a key/value Pair
 
 #assoc
 #clear
+
+* Removes all key/value pairs from a hash.
+
+> inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
+
+> > inventory.clear #=> {}
+
 #compare_by_identity
 #compare_by_identity?
 #default
@@ -140,6 +153,13 @@ Editing and Adding a key/value Pair
 > > {a => 2}.empty? #=> *false*
 
 #eql?
+
+* Returns *true* if two hashes are equal by the hash equality method. Otherwise *false*.
+
+> {'apples' => 3, 'bananas' => 2}.eql?({'apples' => 3, 'bananas' => 2}) #=> *true*
+
+> {'apples' => 3, 'bananas' => 2}.eql?({'apples' => 3, 'bananas' => 4}) #=> *false*
+
 #fetch
 #flatten
 #has_key?
