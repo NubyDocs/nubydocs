@@ -43,9 +43,9 @@ Used => All the time!
 #empty?
 #eql?
 #fetch **:Fetch returns a designated element from a given index** 
-Ex: %w[1 2 3 4].fetch(1) returns 2 (2 is at index 1 in this array)
+Ex: %w(1 2 3 4).fetch(1) returns 2 (2 is at index 1 in this array)
 
-Ex: %w[1 2 3 4].fetch(-1) returns 4 (4 is the last element in this array)
+Ex: %w(1 2 3 4).fetch(-1) returns 4 (4 is the last element in this array)
 
 Used => Often
 
@@ -53,11 +53,17 @@ Use: Given an array of words, use fetch to only return a certain word based on i
 #fill
 #find_index
 #first
-#flatten
+#flatten **:Flatten returns a new one dimensional array**
+EX: ["1", "2", ["3", "4] "5"].flatten returns  ["1", "2", "3", "4", "5"]
+Used => Often
+
 #flatten!
 #frozen?
 #hash
-#include?
+#include? **:Include? returns true if a given object is present in self**
+EX: a = %w(A B C D)
+    a.include?("A") returns true
+    a.include?("Z") returns false
 #index
 #initialize_copy
 #insert
