@@ -4,7 +4,7 @@
 # %w **Quick hand way of writing an array**
  %w allows you to create an array without commas and quotation marks.
 
-Ex: a = ["1", "2", "3", "4"] is equivalent to a = %w[ 1 2 3 4]
+Ex: a = ["1", "2", "3", "4"] is equivalent to a = %w( 1 2 3 4)
 
 Used => All the time!
 #&
@@ -100,9 +100,9 @@ Ex: a = %w[this is using pop]
 #size
 #slice
 #slice! **Slice is used to remove elements from an array given their index, and the removed object is also returned**
-Ex: %w[A B C D E F G].slice!(1) returns "b" 
+Ex: %w(A B C D E F G).slice!(1) returns "b" 
 
- the array is now %w[A C D E F G]
+ the array is now %w(A C D E F G)
 
 Used => Often
 #sort
