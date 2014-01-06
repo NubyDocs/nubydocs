@@ -140,7 +140,16 @@ Editing and Adding a key/value Pair
 #default_proc=
 #delete
 #delete_if
-#each
+#each {|key,value| *block* }
+
+* Calls the block once on each key in the hash, with the *key* and *value* as parameters.
+
+> inventory = {'apples' => 3, 'bananas' => 2, 'oranges' => 1}
+
+> > inventory.each { |fruit, quantity| inventory[fruit.upcase] = (quantity * 2) }
+
+> > #=> {'APPLES' => 6, 'BANANAS' => 4, 'ORANGES' => 2}
+
 #each_key
 #each_pair
 #each_value
