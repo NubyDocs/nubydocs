@@ -81,6 +81,11 @@ Editing and Adding a key/value Pair
 
 ::[]
 ::new
+
+* Create a new hash
+
+> Hash.new
+
 ::try_convert(*param*)
 
 * Tries to convert the specified *param* to a hash. If successful, it will return a converted hash and returns nil otherwise.
@@ -170,7 +175,16 @@ Editing and Adding a key/value Pair
 > {'apples' => 3, 'bananas' => 2}.eql?({'apples' => 3, 'bananas' => 4}) #=> *false*
 
 #fetch
-#flatten
+#flatten / flatten(*param*)
+
+> Returns an array of the key/value elements of the hash. Unlike the Array flatten method, this does not recursively flatten the elements. It takes an optional *param* that specifies the level of recursion to flatten.
+
+> inventory = {'apples' => ['2 fuji', '3 granny smith'], 'bananas' => 2, 'oranges' => 1}
+
+> > inventory.flatten #=> ["apples", ["2 fuji", "3 granny smith"], "bananas", 2, "oranges", 1] 
+
+> > inventory.flatten(2) #=> ["apples", "2 fuji", "3 granny smith", "bananas", 2, "oranges", 1] 
+
 #has_key?
 #has_value?
 #hash
