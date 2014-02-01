@@ -118,6 +118,7 @@ convert a string to an integer
 #tr_s!
 #unpack
 #upcase
+ If a string is boring, bump up the volume!
 #upcase!
 #upto
 #valid_encoding?
