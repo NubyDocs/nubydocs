@@ -1,3 +1,20 @@
+**What is an Array anyway?**
+ An array is a collection.  An array is a list.  What does this mean? 
+  Say you have three numbers that you want to order.  
+  Let's say prime digits
+  Then you could put them into an array
+  ''' ruby
+  a = %w(  2      3      5      7     11     13     17     19     23     29 
+     31     37     41     43     47     53     59     61     67     71 
+     73     79     83     89     97    101    103    107    109    113 
+    127    131    137    139    149    151    157    163    167    173 
+    179    181    191    193    197    199    211    223    227    229 )
+  '''
+  What you can do with this array is endless... hence the power of Enumerables with the Array Class.  
+  
+  ***See the methods below!***
+
+
 ::[]
 ::new
 ::try_convert
