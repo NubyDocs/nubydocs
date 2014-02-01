@@ -72,7 +72,7 @@ Use: Given an array of words, use fetch to only return a certain word based on i
 #fill
 #find_index
 #first
-#flatten **:Flatten returns a new one dimensional array**
+#flatten **:Flatten returns a new one dimensional array** 
 EX: ["1", "2", ["3", "4] "5"].flatten returns  ["1", "2", "3", "4", "5"]
 Used => Often
 
