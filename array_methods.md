@@ -118,6 +118,7 @@ Ex: a = %w[this is using pop]
 #rindex
 #rotate
 #rotate!
+
 #sample
 #select
 #select!
