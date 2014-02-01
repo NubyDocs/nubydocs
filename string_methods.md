@@ -21,6 +21,10 @@
 #casecmp
 #center
 #chars
+ "KEVAN".chars =
+  "K" "E" "V" "A" "N"
+  
+  
 #chomp
 #chomp!
 #chop
