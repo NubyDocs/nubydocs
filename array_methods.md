@@ -15,6 +15,8 @@
   What you can do with this array is endless... hence the power of Enumerables with the Array Class.  
   
   ***See the methods below!***
+  
+  ***As always, use bang (!) with caution in any method***
 
 
 ::[]
