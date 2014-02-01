@@ -92,6 +92,8 @@
 #squeeze!
 #start_with?
 #strip
+ Take out whitespace 
+ 
 #strip!
 #sub
 #sub!
@@ -103,6 +105,9 @@
 #to_c
 #to_f
 #to_i
+convert a string to an integer
+ "11111".to_i = 11111
+  very useful
 #to_r
 #to_s
 #to_str
